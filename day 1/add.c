@@ -1,11 +1,19 @@
-#include <studio.h>
+#include <stdio.h>
 int main()
 {
-    int num1,num2;
-    printf("Enter the first integer:");
-    scanf("%d,&num1");
-    printf("Enter the second integer:");
-    scanf("%d,&num2");
-    print(sum:%d\n,num1+num2):
+    int a, b;
+    printf("Enter value of a: ");
+    scanf("%d", &a);
+    printf("Enter value of b: ");
+    scanf("%d", &b);
+
+    // Swapping without using third variable
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    printf("After swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
     return 0;
 }
